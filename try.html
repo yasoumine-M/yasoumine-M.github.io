@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmine MSYAH's Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            line-height: 1.6;
+            /* Removed background-color: pink; */
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header-content {
+            margin-top: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #about {
+            background: #f4f4f4;
+        }
+
+        #contact {
+            background: #f4f4f4;
+        }
+
+        #linkedin {
+            background: #333;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        #linkedin h2 {
+            font-size: 2.5rem;
+        }
+
+        #linkedin p {
+            margin-bottom: 20px;
+        }
+
+        .linkedin-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .proverb {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: #555; /* Adjusted proverb color */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            font-family: Candara, Arial, sans-serif;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            max-width: 400px;
+            font-family: Courier New, Courier, monospace;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        form button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#linkedin">LinkedIn</a></li> <!-- Added LinkedIn section link -->
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Yasmine MSYAH</p>
+        </div>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Yasmine MSYAH. I’m currently exploring and learning more about these digital skills, and I’m excited to share my journey with you through this portfolio.</p>
+        <p class="proverb">I believe in "Knowledge is power, but sharing is wisdom"</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/mgeggdor" method="POST">
+            <input type="hidden" name="_replyto" value="your-email@example.com"> <!-- Replace with your email address -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Added LinkedIn section -->
+    <section id="linkedin">
+        <h2>LinkedIn Profile</h2>
+        <p>Connect with me on LinkedIn to learn more about my professional background.</p>
+        <p><a href="https://www.linkedin.com/in/yasmine-m-aa0b1b243" class="linkedin-link" target="_blank">Visit LinkedIn Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Yasmine MSYAH. All rights reserved.</p>
+    </footer>
+</body>
+</html>
